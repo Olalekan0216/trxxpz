@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Cart</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+          integrity="sha384-4LISF5TTJX/fLmGSxO53rV4miRxdg84mZsxmO8Rx5jGtp/LbrixFETvWa5a6sESd" crossorigin="anonymous">
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='/css/style.css'>
+</head>
+<header>
+    <div>
+        <i id="hamburgEdit" onclick="NavCreate()" class="bi bi-list aq"></i>
+        <nav id="navbar">
+            <i onclick="NavReturn()" class="bi bi-x-lg ai"></i>
+            <a  id="a"class="home" href="/index.html">Home</a>
+            <a  id="a" class="shop" href="/pages/shop.html">Shop</a>
+            <a  id="a"class="about" href="/pages/about.html">About Us</a>
+            <!-- <a  id="a" class="vision" href="">Vision</a>
+            <a  id="a" class="mission" href="">Mission</a> -->
+            <a  id="a" class="contact" href="">Contact</a>
+        </nav>
+    </div>
+    <div  id="cartspan" class="AppName"> Home/<span>Cart</span></div>
+    <i id="cartbg" class="bi bi-moon "></i>
+</header>
+<body id="cart-body">
+    <div id="cartSection">
+        <!-- Cart items will be displayed here -->
+    </div>
+    <script src='/js/index.js'></script>
+</body>
+</html>

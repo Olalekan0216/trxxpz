@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>TRXXPZ</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+    integrity="sha384-4LISF5TTJX/fLmGSxO53rV4miRxdg84mZsxmO8Rx5jGtp/LbrixFETvWa5a6sESd" crossorigin="anonymous">
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/style.css'>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</head>
+<!-- <script>
+    AOS.init();
+  </script> -->
+
+<!-- <div class="message">
+    <div id="message">
+    
+    <i style="text-align: left;"  class="bi bi-x-lg"></i>            
+    
+    </div>
+    </div> -->
+<header class="home-header">
+    <!-- <div style="display: none;" id="shopI"></div> -->
+    <!-- <nav style="justify-content: left;" id="navbar">
+        <i onclick="NavReturn()"  class="bi bi-x-lg ai"></i>            
+<a class="home" href="/index.html">Home</a>
+<a class="shop" href="/pages/shop.html">Shop</a>
+<a class="clicked" class="about" href="/pages/about.html">About Us</a>
+<a class="contact" href="">Contact</a>
+
+    </nav> -->
+
+    <img onclick="LogoutBtn()" class="logo" src="/images/logo.jpg" alt="" srcset="">
+ 
+       <div class="appname">TRXXPZ</div>
+<!-- <i class="bi bi-cart3 "></i> -->
+<i  class="bi bi-cart3"></i>
+    <span style="margin-left: 2%;" id="Cart-itemsNum" class="Cart-itemsNum" ></span>
+    <!-- <p class="motto">_what is it you desire_</p> -->
+</header>
+
+<body>
+    <div class="below">
+        <div id="logout-btn">Logout</div>
+        <div class="motto">_what is it you desire_</div>
+        <div style="visibility: hidden;">not used</div>
+    </div>
+    <section class="hero-section">
+        <!-- Swiper Container -->
+        <swiper-container class="mySwipera" pagination="true" pagination-clickable="true" navigation="true" space-between="30"
+            style="--swiper-navigation-color: rgb(10, 10, 10);" centered-slides="true" autoplay-delay="2500" autoplay-disable-on-interaction="false">
+            <swiper-slide><img src="/images/Gallery4.jpeg" alt="Gallery Image 1"></swiper-slide>
+            <swiper-slide><img src="/images/Screenshot_20240629_213138_Instagram.jpg" alt="Instagram Screenshot"></swiper-slide>
+            <swiper-slide><img src="/images/Gallery5.jpeg" alt="Gallery Image 2"></swiper-slide>
+            <swiper-slide><img src="/images/Gallery2.jpeg" alt="Gallery Image 3"></swiper-slide>
+            <swiper-slide><img src="/images/jort.jpeg" alt="Jort Image"></swiper-slide>
+        </swiper-container>
+    
+        <!-- Hero Text Section -->
+        <div class="hero-text">
+            <p>.Stylish.</p>
+            <hr>
+            <p class="main-title">Streetwear</p>
+            <hr>
+            <p>Like what you see?</p>
+            <button onclick="ToShop()">Shop Now</button>
+        </div>
+    </section>
+    
+    <!-- Initialize Swiper -->
+    <script>
+        const swiper = new Swiper('.mySwipera', {
+            loop: true,
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+    </script>
+    
+<!--       
+    <section  class="hero-section" >
+        <swiper-container class="mySwipera" pagination="true" pagination-clickable="true" navigation="true" space-between="30" style="--swiper-navigation-color: rgb(19, 18, 18);"
+        centered-slides="true" autoplay-delay="2500" autoplay-disable-on-interaction="false">
+        <swiper-slide><img src="/images/Gallery4.jpeg" alt=""></swiper-slide>
+        <swiper-slide><img src="/images/Screenshot_20240629_213138_Instagram.jpg" alt="" srcset=""></swiper-slide>
+        <swiper-slide><img src="/images/Gallery5.jpeg" alt=""></swiper-slide>
+         <swiper-slide><img src="/images/Gallery2.jpeg" alt=""></swiper-slide>
+         <swiper-slide><img src="/images/jort.jpeg" alt="" srcset=""></swiper-slide>
+    
+      </swiper-container>
+    
+        <div class="hero-text">
+      <p >.Stylish. </p>
+      <hr>  <p style="font-size:1.7rem;">Streetwear </p><hr>
+            <p>Like what you see?</p>
+            <button onclick="ToShop()">Shop Now</button>
+        </div>
+    </section> -->
+    
+<section class="service-section">
+
+<div class="services">  
+    <div>
+    <i class="bi bi-truck"></i>
+   <p>Free Shipping</p>
+   <div >we offer fast and free shopping delievry once, payment has been made <br>
+<strong>NB:</strong>
+Delievery only occurs within Lagos, Nigeria. </div>
+</div>
+    <div>
+        <i class="bi bi-coin"></i>
+        <p >Refund</p>
+        <div >If you don't like what you got, we refund you <br>
+             <strong>NB:</strong>
+        Refund's can only take place within 2 days of purchase</div>
+    </div>
+        <div style="overflow: hidden;">
+            <i class="bi bi-paypal"></i>
+            <p>Free Shipping</p>
+            <div >            Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci</div>
+            </div>
+</div>
+
+<p class="Gallery-Header">Some Of Our Finest</p>
+</section>
+    <section class="Gallery">
+        
+            
+        <!-- <img src="/images/Gallery1.jpeg" alt="">
+        <img src="/images/Gallery2.jpeg" alt="">
+        <img src="/images/Gallery3.jpeg" alt="">
+        <img src="/images/Gallery6.jpeg" alt="">
+        <img src="/images/Gallery4.jpeg" alt=""> -->
+
+        <swiper-container style="--swiper-navigation-color: #FFFF; --swiper-pagination-color: #0080ff" class="mySwiper"
+        thumbs-swiper=".mySwiper2" space-between="10" navigation="true">
+        <swiper-slide>
+            <img src="/images/Gallery1.jpeg" alt="">
+        </swiper-slide>
+        <swiper-slide>
+            <img src="/images/opium tee.jpeg" alt="">
+        </swiper-slide>
+        <swiper-slide>
+            <img src="/images/hero.jpg" alt="">
+        </swiper-slide>
+        <swiper-slide>
+            <img src="/images/Gallery4.jpeg" alt="">
+          
+        </swiper-slide>
+        <swiper-slide>
+            <img src="/images/Gallery5.jpeg" alt="">
+          
+        </swiper-slide>
+        <swiper-slide>
+            <img src="/images/Gallery6.jpeg" alt="">
+      
+        </swiper-slide>
+        <swiper-slide>
+            <img src="/images/Screenshot_20240629_212650_Instagram.jpg" alt="">
+          
+        </swiper-slide>
+        <swiper-slide>
+            <img src="/images/cap1.jpg" alt="">
+        </swiper-slide>
+        <swiper-slide>
+            <img src="/images/Gallery3.jpeg" alt="">
+          
+        </swiper-slide>
+       
+      </swiper-container>
+    
+      <swiper-container class="mySwiper2" space-between="10" slides-per-view="4" free-mode="true"
+        watch-slides-progress="true">
+        <swiper-slide>
+            <img src="/images/Gallery1.jpeg" alt="">
+        </swiper-slide>
+        <swiper-slide>
+            <img src="/images/opium tee.jpeg" alt="">
+        </swiper-slide>
+        <swiper-slide>
+            <img src="/images/hero.jpg" alt="">
+        </swiper-slide>
+        <swiper-slide>
+            <img src="/images/Gallery4.jpeg" alt="">
+        </swiper-slide>
+        <swiper-slide>
+            <img src="/images/Gallery5.jpeg" alt="">
+        </swiper-slide>
+        <swiper-slide>
+            <img src="/images/Gallery6.jpeg" alt="">
+        </swiper-slide>
+        <swiper-slide>
+            <img src="images/Screenshot_20240629_212650_Instagram.jpg" alt="">
+        </swiper-slide>
+        <swiper-slide>
+            <img src="/images/cap1.jpg" alt="">
+     
+        </swiper-slide>
+        <swiper-slide>
+            <img src="/images/Gallery3.jpeg" alt="">
+      
+        </swiper-slide>
+      </swiper-container>
+    
+      <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+    
+    </body>
+    
+    </html>
+    
+        
+        
+       
+
+    </section>
+    <!-- <div>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt nam dicta deleniti necessitatibus modi dolorum dignissimos? Quisquam possimus laboriosam quidem quam temporibus voluptas natus, fuga explicabo nostrum officia consequatur quis!
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, dolores modi. Veritatis similique temporibus explicabo eaque minus dolorum id velit ipsum deserunt iste aliquid, ad aliquam dicta atque magni ea nostrum perferendis beatae quisquam consequuntur, aut architecto fugit! Omnis aliquid aut quasi doloribus, provident rerum. A tempora neque, aliquid saepe consectetur non recusandae fuga quod itaque voluptas porro, magni accusantium ex. Cum, quo. Iure, fugiat in vel laudantium laboriosam ullam maiores accusantium hic asperiores recusandae explicabo placeat et impedit quod ducimus officia architecto corrupti non? Dolorum inventore quasi, optio adipisci delectus saepe nihil nisi atque provident? Velit numquam, qui doloremque natus dignissimos adipisci, cupiditate fugit eaque labore ipsam rerum ullam delectus, non enim placeat eius ducimus est ex accusantium? Dignissimos obcaecati numquam adipisci quae voluptas tempora ad sapiente, perferendis impedit minima cumque eum reprehenderit vero quam magnam rem quisquam nostrum laborum eaque dolorum corporis repudiandae voluptate. Reprehenderit aspernatur, iure autem odio, facere minima molestiae vero cupiditate explicabo ea perferendis officia illo laudantium tenetur quae quos! Id sunt quidem velit voluptas molestiae iste, nisi perferendis nemo pariatur! Possimus voluptas nulla sint quod quia repellat aspernatur laudantium culpa nam quae, labore placeat esse dolorum unde a officia atque iusto deserunt voluptatem harum!
+    </div> -->
+    <div style="margin-top: 30px;"  id="messageId" class="message">
+        <div id="message">
+        
+        <i style="text-align: left;"   class="bi bi-x-lg"></i>            
+        
+        </div>
+        </div>
+        <div id="shopI"></div>
+        <div id="shopX"></div>
+<section  class="New">
+    <h2 data-aos="zoom-in-up">New Arrivals</h2>
+    <marquee> 10% Off For The Holiday</marquee>
+
+<div id="shop">
+    <div data-aos="zoom-in" class="product" data-id="71" data-name="beanie" data-price="₦10,000.00" data-description="unisex reversible jacquard monogram hat with design related to the fictional character 'Venom' ">
+        <img  src="/images/new1.jfif" alt="beanie" height="500px" width="500px">
+        <div class="img_info">
+            
+            </div>
+    </div>
+    <div data-aos="zoom-in" class="product" data-id="72" data-name="jort" data-price="₦17,000.00" data-description="Black Stylish mid-rise men's jean shorts(jort) ">
+        <img  src="/images/bermuda.jfif" alt="beanie">
+        <div class="img_info">
+            
+            </div>
+    </div>
+    <div data-aos="zoom-in" class="product" data-id="73" data-name="beanie" data-price="₦18,000.00" data-description="Avengers Spiderman Roll Down Beanie Black One Size">
+        <img  src="/images/new3.jfif" alt="beanie">
+        <div class="img_info">
+            
+            </div>
+    </div>
+    <div data-aos="zoom-in"  class="product" data-id="56" data-name="cargo pants" data-price="₦21,000.00" data-description="black unisex cargo pants with an aesthetic design ">
+        <img src="/images/cgp.jpeg" alt="jort">
+        <div class="img_info">
+        </div>
+    </div>
+
+   
+    <!-- <div class="product" data-id="74" data-name="beanie" data-price="₦15,000.00" data-description="Men Lightning Pattern Beanie">
+        <img  src="/images/new5.jfif" alt="beanie">
+        <div class="img_info">
+            
+            </div>
+    </div> -->
+    <div data-aos="zoom-in" class="product" data-id="75" data-name="jort" data-price="₦30,000.00" data-description="Light Blue Stylish mid-rise men's jean shorts(jort)">
+        <img  src="/images/new7.jfif" alt="beanie" height="350px" width="500px">
+        <div class="img_info">
+            
+            </div>
+    </div> 
+    <div data-aos="zoom-in" class="product" data-id="76" data-name="beanie" data-price="₦15,000.00" data-description=" unisex Handprint Knit Beanie">
+        <img  src="/images/new6.jfif" alt="beanie" height="350px" width="500px">
+        <div class="img_info">
+            
+            </div>
+    </div>
+    <div data-aos="zoom-in" class="product" data-id="77" data-name="jort" data-price="₦25,000.00" data-description=" Men's Vintage Washed Distressed Baggy Denim Capris">
+        <img  src="/images/new8.jfif" alt="beanie" height="370px" width="500px">
+        <div class="img_info">
+            
+            </div>
+    </div>
+   
+    <div data-aos="zoom-in" class="product" data-id="78" data-name="beanie" data-price="₦19,000.00" data-description="Cross Decor Knitted Winter Beanies for Women - Pink _ 56-58cm">
+        <img  src="/images/new4.jfif" alt="beanie">
+        <div class="img_info">
+            
+            </div>
+    </div>
+    <div data-aos="zoom-in" class="product" data-id="79" data-name="opium tee" data-price="₦10,000.00" data-description="Cross Decor Knitted Winter Beanies for Women - Pink _ 56-58cm">
+        <img  src="/images/WhatsApp Image 2024-10-15 at 11.48.01 PM.jpeg " alt="beanie">
+        <div class="img_info">
+            
+            </div>
+    </div>
+    <div data-aos="zoom-in"  class="product" data-id="74" data-name="cargo pants" data-price="₦21,000.00" data-description="BDG Baggy Skate Quad Cargo Jean in Charcoal, Men's at Urban Outfitters">
+        <img src="/images/BDG Baggy Skate Quad Cargo Jean in Charcoal, Men's at Urban Outfitters.jfif" alt="jort" width="400px" height="auto">
+        <div class="img_info">
+        </div>
+    </div>
+
+    <div data-aos="zoom-in"  class="product" data-id="80" data-name="cargo pants" data-price="₦25,000.00" data-description="BDG Baggy Skate Quad Cargo Jean in Charcoal, Men's at Urban Outfitters">
+        <img src="/images/Pantalón vaquero baggy - 1981F - 40 _ Black.jfif" alt="jort" width="400px" height="auto">
+        <div class="img_info">
+        </div>
+    </div>
+
+
+
+</div>
+<div data-aos="zoom-in-up" class="ad">
+    <p>Go To Shop For More</p>
+    <button onclick="ToShop()">Shop</button>
+</div>
+
+
+
+</section>
+<div class="CTA">
+  
+    <div>
+      <strong>NEWSLETTER</strong>
+      <p>
+        RECEIVE OUR NEWS AND UNMISSABLE DISCOUNTS
+      </p>
+    </div>
+    <div class="name">
+      <p>NAME</p>
+      <input class="Ibg" type="text">
+    </div>
+    <div class="name">
+      <p>EMAIL</p>
+      <input class="Ibg" type="text">
+    </div>
+    <div>
+      <p style="visibility: hidden;">iu</p>
+    <button>SUBSCRIBE</button>
+    </div>
+    
+      </div>
+<!-- <div data-aos="fade-up" class="ad">
+    <p>Go To Shop For More</p>
+    <button onclick="ToShop()">Shop</button>
+</div> -->
+    <footer>
+        <div class="footer">
+<div class="fdiv1"  >
+    TRXXPZ
+    <p style="font-size:0.7em; color:white">© 2022 trxxpz.</p>
+    <p style="font-size:0.7em; color:white"> all rights reserved </p>
+    <p style="font-size:0.8em; color:white"> <strong >Phone No:</strong> 09156585399 </p>
+    <!-- <p style="font-size:0.7em; color:white"> For Further Enquiries Send a dm to the CEO </p> -->
+    <!-- <p style="font-size:0.8em; color:white"> United estate sangotedo, Ajah. Lagos Nigeria.</p> -->
+
+</div>
+<div class="about_us">
+    About Us
+    <a href="/pages/about.html">About Us</a>
+    <a href="/pages/about.html">FAQs</a>
+    <a href="/pages/store_location.html">Store Location</a>
+
+
+</div>
+<div class="follow_us" >
+    Follow Us
+   <div><i class="bi bi-facebook"></i>trxxpz_</div> 
+   <div><i class="bi bi-instagram"></i>trxxpz._</div> 
+   <div><i class="bi bi-envelope"></i>trxxpz@gmail.com</div> 
+</div>
+
+</div>
+    </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script defer src='js/index.js'></script>
+    <script>
+        AOS.init();
+      </script>
+</body>
+
+
+</html>

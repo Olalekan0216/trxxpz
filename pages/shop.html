@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Shop</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+    integrity="sha384-4LISF5TTJX/fLmGSxO53rV4miRxdg84mZsxmO8Rx5jGtp/LbrixFETvWa5a6sESd" crossorigin="anonymous">
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='/css/style.css'>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</head>
+<div id="messageId" class="message">
+<div id="message">
+
+<i   class="bi bi-x-lg"></i>            
+
+</div>
+</div>
+<header class="shop-header">
+    <div>
+        <i id="shopI" onclick="NavCreate()"  class="bi bi-list aq"></i>
+        <nav id="navbar">
+<i onclick="NavReturn()"  class="bi bi-x-lg ai"></i>            
+<a  class="home" href="/index.html">Home</a>
+<a class="clicked" class="shop" href="/pages/shop.html">Shop</a>
+<a class="about" href="/pages/about.html">About Us</a>
+<!-- <a class="vision" href="">Vision</a>
+<a class="mission" href="">Mission</a> -->
+<a class="contact" href="">Contact</a>
+ 
+        </nav>
+    </div> 
+    <div class="space">
+    <div class="AppName"> Home/<span>Shop</span></div> 
+    <i id="shopX" class="bi bi-cart3 cart-edit"></i>
+    <span id="Cart-itemsNum" class="Cart-itemsNum" ></span>
+
+    <!-- <div  class="searchbox"><span id="Cart-itemsNum" ></span>  <i class="bi bi-cart3"></i><input id="searchbar" type="text" placeholder="Search">    <i onclick="" class="bi bi-search"></i></div> -->
+</div>
+</header>
+
+    <div  class="searchbox">  <input id="searchbar" type="text" placeholder="Search">    <i onclick="Search()" class="bi bi-search"></i></div>
+
+<body>
+    <div id="shop">
+        <div class="product" data-id="1" data-name="opium tee" data-price="₦10,000.00" data-description="black and white longsleeve opium tee with design related to the fictional character 'Venom' ">
+            <img  src="/images/Screenshot_20240625_014857_Instagram.jpg" alt="opium tee 1">
+            <div class="img_info">
+                
+                </div>
+                
+        </div>
+        <div  class="product" data-id="2" data-name="beanie" data-price="₦7,000.00" data-description="unisex reversible jacquard monogram hat  ">
+            <img src="/images/81xoGwdmEaL._AC_UY1000_.jpg" alt="opium tee 2">
+            <div class="img_info">
+
+            </div>
+        </div>
+        <div  class="product" data-id="3" data-name="Gta tee" data-price="₦10,000.00" data-description="grey longsleeve sweater with design related to the game 'GTA 5' ">
+            <img src="/images/IMG-20240625-WA0000.jpg" alt="gta tee 1">
+            <div class="img_info">
+            </div>
+        </div>
+        <div  class="product" data-id="4" data-name="opium hoodie" data-price="₦10,000.00" data-description="grey anime related opium hoodie, available in different sizes ">
+            <img src="/images/IMG-20240625-WA0001.jpg" alt="opium hoodie 3">
+            <div class="img_info">
+            </div>
+        </div>
+        <div  class="product" data-id="5" data-name="opium tee" data-price="₦10,000.00" data-description="black opium tee with green aesthetic design, available in different sizes  ">
+            <img src="/images/Screenshot_20240625_014707_Instagram.jpg" alt="opium tee 3">
+            <div class="img_info">
+            </div>
+        </div>
+        <div  class="product" data-id="6" data-name="opium tee" data-price="₦10,000.00" data-description=" unisex white opium tee with black aesthetic design related to female fictional character's ">
+            <img src="/images/Screenshot_20240625_014757_Instagram.jpg" alt="opium tee 4">
+            <div class="img_info">
+            </div>
+        </div>
+        <div  class="product" data-id="7" data-name="jort" data-price="₦8,000.00" data-description="unisex black jean short's (jort) with our brand name written around the zipper  ">
+            <img src="/images/Screenshot_20240629_212903_Instagram.jpg" alt="jort 1">
+            <div class="img_info">
+            </div>
+        </div>
+        
+        <div  class="product" data-id="8" data-name="opium tee" data-price="₦8,000.00" data-description=" white opium tee with aesthetic design of a face, available in different sizes">
+            <img src="/images/Screenshot_20240625_014916_Instagram.jpg" alt="opium tee 5">
+            <div class="img_info">
+            </div>
+        </div>
+        <div  class="product" data-id="9" data-name="opium hoodie" data-price="₦12,000.00" data-description="black opium hoodie with aesthetic design of the fictional character 'steel' in 'max&steel', available in different sizes">
+        <img src="/images/Screenshot_20240625_014950_Instagram.jpg" alt="opium hoodie 4">
+        <div class="img_info">
+        </div>
+    </div>
+    <div  class="product" data-id="10" data-name="opium tee" data-price="₦12,000.00" data-description=" unisex black opium tee with aesthetic design, available in different sizes">
+    <img src="/images/Screenshot_20240625_015008_Instagram.jpg" alt="opium tee 6">
+    <div class="img_info">
+    </div>
+</div>
+<div  class="product" data-id="11" data-name="opium tee" data-price="₦12,000.00" data-description="black and white longsleeve opium tee with design related to the fictional character 'Venom' ">
+<img src="/images/Screenshot_20240625_015026_Instagram.jpg" alt="opium tee 7">
+<div class="img_info">
+</div>
+</div>
+<div  class="product" data-id="12" data-name="belt" data-price="₦12,000.00" data-description="bbismon belt , available in different colors and aesthetic designs ">
+<img src="/images/Screenshot_20240625_015052_Instagram.jpg" alt="opium tee 7">
+<div class="img_info">
+</div>
+</div>
+<div  class="product" data-id="13" data-name="opium tee" data-price="₦12,000.00" data-description="black and white longsleeve opium tee with design related to the fictional character 'Venom' ">
+<img src="/images/Screenshot_20240625_015133_Instagram.jpg" alt="opium tee 8">
+<div class="img_info">
+</div>
+</div>
+<div  class="product" data-id="14" data-name="opium tee" data-price="₦12,000.00" data-description="black and white longsleeve opium tee with design related to the fictional character 'Venom' ">
+    <img src="/images/Screenshot_20240625_015212_Instagram.jpg" alt="opium tee 9">
+    <div class="img_info">
+    </div>
+ </div>
+ <!-- <div   class="product" data-id="15" data-name="opium tee" data-price="#12000">
+    <img src="/images/Screenshot_20240625_015224_Instagram.jpg" alt="opium tee 10">
+ </div> -->
+ <div  class="product" data-id="15" data-name="opium tee" data-price="₦12,000.00" data-description="black and white longsleeve opium tee with design related to the fictional character 'Venom' ">
+    <img src="/images/Screenshot_20240625_015239_Instagram.jpg" alt="opium tee 10">
+    <div class="img_info">
+        
+    </div>
+ </div>
+ <!-- <div  class="product" data-id="16" data-name="opium tee" data-price="#12000">
+    <img src="/images/Screenshot_20240625_015250_Instagram.jpg" alt="opium tee 9">
+ </div> -->
+   <div  class="product" data-id="16" data-name="beanie" data-price="₦8,000.00" data-description="red and black beanie with aesthetic design related to the fictional character 'Spiderman'  ">
+    <img src="/images/beanie.jpg" alt="beanie 2">
+    <div class="img_info">
+    </div>
+ </div>       
+ <!-- <div  class="product" data-id="17" data-name="beanie" data-price="#8000">
+    <img src="/images/Screenshot_20240625_015421_Instagram.jpg" alt="beanie 2">
+ </div>        -->
+ <div  class="product" data-id="17" data-name="cargo pants" data-price="₦8,000.00" data-description=" black unisex cargo pants with red colored aesthetic design  ">
+    <img src="/images/Screenshot_20240629_212626_Instagram.jpg" alt=" cargo pants 1">
+    <div class="img_info">
+    </div>
+ </div>       
+ <div  class="product" data-id="18" data-name="jort" data-price="₦8,000.00" data-description=" black unisex jrots with red colored aesthetic design  ">
+    <img src=" /images/Screenshot_20240629_212650_Instagram.jpg" alt=" jort 2">
+    <div class="img_info">
+    </div>
+ </div>
+ <div  class="product" data-id="19" data-name="opium tee" data-price="₦8,000.00" data-description="black and white longsleeve opium tee with aesthetic japanese related design   ">
+    <img src="/images/Screenshot_20240629_212711_Instagram.jpg" alt=" opium tee 11">
+    <div class="img_info">
+    </div>
+ </div>
+ <div  class="product" data-id="20" data-name="beanie" data-price="₦6,500.00" data-description=" reversible unisex beanie with design related to the fictional character 'Venom' ">
+    <img src="/images/Screenshot_20240629_212801_Instagram.jpg" alt="beanie 3">
+    <div class="img_info">
+    </div>
+ </div>
+ <!-- <div  class="product" data-id="21" data-name="beanie" data-price="#6500">
+    <img src="/images/Screenshot_20240629_212740_Instagram.jpg" alt="beanie 3">
+ </div> -->
+ <div  class="product" data-id="21" data-name="singlet" data-price="₦6,500.00" data-description="black sleeveless opium tee with aesthetic design for females  ">
+    <img src="/images/Screenshot_20240629_212821_Instagram.jpg" alt="singlet 1">
+    <div class="img_info">
+    </div>
+    
+ </div>
+ <div  class="product" data-id="21" data-name="opium tee" data-price="₦17,000.00" data-description="black longsleeve opium tee with aesthetic design ">
+    <img src="/images/WhatsApp Image 2024-10-15 at 11.48.04 PM (1).jpeg" alt="opium tee">
+    <div class="img_info">
+    </div>
+ </div>
+ <div  class="product" data-id="22" data-name="opium tee" data-price="₦16,500.00" data-description="black and white longsleeve opium tee with aesthetic design ">
+    <img src="/images/opium tee.jpeg" alt="opium tee">
+    <div class="img_info">
+    </div>
+ </div>
+ <div  class="product" data-id="23" data-name="cap" data-price="₦5,500.00" data-description="pink and white unisex cap with aesthetic design ">
+    <img src="/images/cap1.jpg" alt="cap">
+    <div class="img_info">
+    </div>
+</div> 
+
+    <div  class="product" data-id="24" data-name="jort" data-price="₦9,000.00" data-description="unisex black jort's with aesthetic design">
+        <img src="/images/jort.jpeg" alt="jort">
+        <div class="img_info">
+        </div>
+ </div>
+
+ <div  class="product" data-id="25" data-name="jort" data-price="₦9,000.00" data-description="women jean short's (jort) with aesthetic design">
+    <img src="/images/female jort.jpg" alt="jort">
+    <div class="img_info">
+    </div>
+</div>
+<div  class="product" data-id="26" data-name="opium tee" data-price="₦12,000.00" data-description="black unisex opium tee with green aesthetic design related to the 'Crucifix' ">
+    <img src="/images/holy tee.jpg" alt="jort">
+    <div class="img_info">
+    </div>
+</div>
+<div  class="product" data-id="27" data-name="opium tee" data-price="₦10,000.00" data-description="black longsleeve opium tee with aesthetic design, available in all sizes ">
+    <img src="/images/ghost tee.jpg" alt="jort">
+    <div class="img_info">
+    </div>
+</div>
+<div  class="product" data-id="28" data-name="opium tee" data-price="₦10,000.00" data-description="black longsleeve opium tee with aesthetic design, available in all sizes ">
+    <img src="/images/sk tee.jpg" alt="jort">
+    <div class="img_info">
+    </div>
+</div>
+<div  class="product" data-id="29" data-name="opium tee" data-price="₦10,000.00" data-description="black and white longsleeve opium tee with aesthetic design, available in all sizes ">
+    <img src="/images/xtee.jpg" alt="jort">
+    <div class="img_info">
+    </div>
+</div>
+<div  class="product" data-id="30" data-name="bag" data-price="₦10,700.00" data-description="cross bag related to the fictional character 'Sonic the hedgehog' ">
+    <img src="/images/sonic bag.jpg" alt="jort">
+    <div class="img_info">
+    </div>
+</div>
+<div  class="product" data-id="31" data-name="opium tee" data-price="₦10,000.00" data-description="black and white longsleeve opium tee with aesthetic design, available in all sizes ">
+    <img src="/images/joker tee.jpg" alt="jort">
+    <div class="img_info">
+    </div>
+</div>
+<div  class="product" data-id="32" data-name="belt" data-price="₦10,000.00" data-description="bbismon belt, available in different colors and aesthetic designs ">
+    <img src="/images/belt1.jpg" alt="jort">
+    <div class="img_info">
+    </div>
+</div>
+<div  class="product" data-id="33" data-name="opium hoodie" data-price="₦20,000.00" data-description="black unisex opium hoodie">
+    <img src="/images/hoodie2.jpg" alt="jort">
+    <div class="img_info">
+    </div>
+</div>
+<div  class="product" data-id="34" data-name="opium tee" data-price="₦10,000.00" data-description="black unisex opium tee, available in all sizes">
+    <img src="/images/sharktee.jpg" alt="jort">
+    <div class="img_info">
+    </div>
+</div>
+<div  class="product" data-id="35" data-name="opium hoodie" data-price="₦18,000.00" data-description="black unisex opium hoodie">
+    <img src="/images/hoodie3.jpg" alt="jort">
+    <div class="img_info">
+    </div>
+</div>
+<div  class="product" data-id="36" data-name="opium hoodie" data-price="₦20,000.00" data-description="black unisex opium hoodie">
+    <img src="/images/hoodie1.jpg" alt="jort">
+    <div class="img_info">
+    </div>
+</div>
+<div  class="product" data-id="37" data-name="opium tee" data-price="₦10,000.00" data-description="black unisex opium tee with an aesthetic design of fictional cahracters">
+    <img src="/images/vroot tee.jpg" alt="jort">
+    <div class="img_info">
+    </div>
+    </div> 
+    <div  class="product" data-id="38" data-name="beanie" data-price="₦8,000.00" data-description="red reversible unisex beanie  with an aesthetic design ">
+        <img src="/images/red beanie.jpg" alt="jort">
+        <div class="img_info">
+        </div>
+        </div> 
+        <div  class="product" data-id="39" data-name="opium tee" data-price="₦10,000.00" data-description="black unisex opium tee with an aesthetic design of fictional cahracters">
+            <img src="/images/anime tee.jpg" alt="jort">
+            <div class="img_info">
+            </div>
+            </div> 
+            <div  class="product" data-id="40" data-name="opium tee" data-price="₦10,000.00" data-description="black unisex opium tee with an aesthetic design of fictional cahracters">
+                <img src="/images/f tee.jpg" alt="jort">
+                <div class="img_info">
+                </div>
+                </div> 
+                <div  class="product" data-id="41" data-name="opium tee" data-price="₦14,000.00" data-description="white unisex opium tee with an aesthetic design of fictional cahracters">
+                    <img src="/images/h tee.jpg" alt="jort">
+                    <div class="img_info">
+                    </div>
+                    </div> 
+                    <div  class="product" data-id="42" data-name="opium tee" data-price="₦10,000.00" data-description="black unisex opium tee with an aesthetic design">
+                        <img src="/images/heart tee.jpg" alt="jort">
+                        <div class="img_info">
+                        </div>
+                        </div> 
+                        <div  class="product" data-id="43" data-name="opium tee" data-price="₦20,000.00" data-description="black unisex opium tee with an aesthetic design of late artist 'Juice wrld'">
+                            <img src="/images/juice wrld tee.jpg" alt="jort">
+                            <div class="img_info">
+                            </div>
+                            </div> 
+                            <div  class="product" data-id="44" data-name="opium tee" data-price="₦17,000.00" data-description="black unisex opium tee with an aesthetic design of fictional cahracters">
+                                <img src="/images/rb tee.jpg" alt="jort">
+                                <div class="img_info">
+                                </div>
+                                </div> 
+
+                                <div  class="product" data-id="45" data-name="opium tee" data-price="₦11,000.00" data-description="black unisex opium tee with an aesthetic design">
+                                    <img src="/images/xo tee.jpg" alt="jort">
+                                    <div class="img_info">
+                                    </div>
+                                    </div> 
+                                    <div  class="product" data-id="46" data-name="opium tee" data-price="₦14,000.00" data-description="black unisex opium tee with an aesthetic design">
+                                        <img src="/images/l tee.jpg" alt="jort">
+                                        <div class="img_info">
+                                        </div>
+                                        </div> 
+                                        <div  class="product" data-id="47" data-name="opium tee" data-price="₦10,000.00" data-description="white unisex opium tee with an aesthetic design">
+                                            <img src="/images/wmx.jpg" alt="jort">
+                                            <div class="img_info">
+                                            </div>
+                                            </div> 
+                                            <div  class="product" data-id="48" data-name="opium tee" data-price="₦16,700.00" data-description="white unisex opium tee with an aesthetic design ">
+                                                <img src="/images/tr tee.jpg" alt="jort">
+                                                <div class="img_info">
+                                                </div>
+                                                </div> 
+                                                <div  class="product" data-id="49" data-name="opium tee" data-price="₦20,000.00" data-description="white unisex opium tee with an aesthetic design ">
+                                                    <img src="/images/asap tee.jpeg" alt="jort">
+                                                    <div class="img_info">
+                                                    </div>
+                                                    </div> 
+                                                    <div  class="product" data-id="50" data-name="opium tee" data-price="₦17,000.00" data-description="white unisex opium tee with an aesthetic design ">
+                                                        <img src="/images/gang tee.jpeg" alt="jort">
+                                                        <div class="img_info">
+                                                        </div>
+                                                        </div>
+                                                        
+                                                        <div  class="product" data-id="51" data-name="opium tee" data-price="₦17,000.00" data-description="white unisex opium tee with an aesthetic design ">
+                                                            <img src="/images/bg tee.jpeg" alt="jort">
+                                                            <div class="img_info">
+                                                            </div>
+                                                        </div>
+                                                        <div  class="product" data-id="52" data-name="opium tee" data-price="₦17,000.00" data-description="white unisex opium tee with an aesthetic design ">
+                                                            <img src="/images/d tee.jpeg" alt="jort">
+                                                            <div class="img_info">
+                                                            </div>
+                                                        </div>
+                                                        <div  class="product" data-id="53" data-name="opium tee" data-price="₦17,000.00" data-description="black unisex opium tee with an aesthetic design ">
+                                                            <img src="/images/skull tee.jpeg" alt="jort">
+                                                            <div class="img_info">
+                                                            </div>
+                                                        </div>
+                                                        <div  class="product" data-id="54" data-name="opium tee" data-price="₦17,000.00" data-description="white unisex opium tee with an aesthetic design ">
+                                                            <img src="/images/kfw tee.jpeg" alt="jort">
+                                                            <div class="img_info">
+                                                            </div>
+
+                                                        </div>
+                                                        <div  class="product" data-id="55" data-name="opium tee" data-price="₦17,000.00" data-description="black unisex opium tee with an aesthetic design ">
+                                                            <img src="/images/ox tee.jpeg" alt="jort">
+                                                            <div class="img_info">
+                                                            </div>
+                                                        </div>
+                                                        <div  class="product" data-id="56" data-name="cargo pants" data-price="₦21,000.00" data-description="black unisex cargo pants with an aesthetic design ">
+                                                            <img src="/images/cgp.jpeg" alt="jort">
+                                                            <div class="img_info">
+                                                            </div>
+                                                        </div>
+                                                        <div  class="product" data-id="57" data-name="cargo pants" data-price="₦10,000.00" data-description="black unisex cargo pants with an aesthetic design ">
+                                                            <img src="/images/cgp2.jpeg" alt="jort">
+                                                            <div class="img_info">
+                                                            </div>
+                                                        </div>
+                                                        <div  class="product" data-id="58" data-name="opium tee" data-price="₦14,000.00" data-description="white unisex opium tee with an aesthetic design ">
+                                                            <img src="/images/lip tee.jpeg" alt="jort">
+                                                            <div class="img_info">
+                                                            </div>
+
+                                                        </div>
+                                                        <div  class="product" data-id="59" data-name="opium tee" data-price="₦10,000.00" data-description="white unisex opium tee with an aesthetic design ">
+                                                            <img src="/images/bt tee.jpg" alt="jort">
+                                                            <div class="img_info">
+                                                            </div>
+
+                                                        </div>
+                                                        <div  class="product" data-id="60" data-name="opium tee" data-price="₦10,000.00" data-description="black unisex opium tee with an aesthetic design ">
+                                                            <img src="/images/fskull tee.jpeg" alt="jort">
+                                                            <div class="img_info">
+                                                            </div>
+
+                                                        </div>
+                                                        <div  class="product" data-id="61" data-name="cargo pants" data-price="₦11,000.00" data-description="black unisex cargo pants with an aesthetic design ">
+                                                            <img src="/images/cgp2.jpeg" alt="jort">
+                                                            <div class="img_info">
+                                                            </div>
+                                                        </div>
+                                                        <div  class="product" data-id="62" data-name="opium tee" data-price="₦10,000.00" data-description="black unisex opium tee with an aesthetic design ">
+                                                            <img src="/images/WhatsApp Image 2024-10-15 at 11.48.01 PM (1).jpeg" alt="jort">
+                                                            <div class="img_info">
+                                                            </div>
+
+                                                        </div>
+                                                        <div  class="product" data-id="63" data-name="opium tee" data-price="₦10,000.00" data-description="black unisex opium tee with an aesthetic design ">
+                                                            <img src="/images/WhatsApp Image 2024-10-15 at 11.48.01 PM.jpeg" alt="jort">
+                                                            <div class="img_info">
+                                                            </div>
+
+                                                        </div>
+                                                        <div  class="product" data-id="64" data-name="opium tee" data-price="₦10,000.00" data-description="black unisex opium tee with an aesthetic design ">
+                                                            <img src="/images/WhatsApp Image 2024-10-15 at 11.48.02 PM (1).jpeg" alt="jort">
+                                                            <div class="img_info">
+                                                            </div>
+
+                                                        </div>
+                                                        <div  class="product" data-id="65" data-name="opium tee" data-price="₦10,000.00" data-description="black unisex opium tee with an aesthetic design ">
+                                                            <img src="/images/WhatsApp Image 2024-10-15 at 11.48.04 PM (2).jpeg" alt="jort">
+                                                            <div class="img_info">
+                                                            </div>
+
+                                                        </div>
+                                                        <div  class="product" data-id="66" data-name="opium hoodie" data-price="₦17,000.00" data-description="black unisex opium hoodie with an aesthetic design ">
+                                                            <img src="/images/hb hoodie.jpeg" alt="jort">
+                                                            <div class="img_info">
+                                                            </div>
+
+                                                        </div>
+                                                        <div  class="product" data-id="67" data-name="jort" data-price="₦15,000.00" data-description="black unisex jorts with an aesthetic design ">
+                                                            <img src="/images/WhatsApp Image 2024-10-15 at 11.47.57 PM.jpeg" alt="jort">
+                                                            <div class="img_info">
+                                                            </div>
+
+                                                        </div>
+                                                        <div  class="product" data-id="68" data-name="jort" data-price="₦15,000.00" data-description="black unisex jorts with an aesthetic design ">
+                                                            <img src="/images/WhatsApp Image 2024-10-15 at 11.47.58 PM (1).jpeg" alt="jort">
+                                                            <div class="img_info">
+                                                            </div>
+
+                                                        </div>
+                                                      
+                                                        <div  class="product" data-id="69" data-name="jort" data-price="₦13,000.00" data-description="black unisex jorts with an aesthetic design ">
+                                                            <img src="/images/WhatsApp Image 2024-10-15 at 11.47.58 PM.jpeg" alt="jort">
+                                                            <div class="img_info">
+                                                            </div>
+
+                                                        </div>
+                                                        <div  class="product" data-id="70" data-name="jort" data-price="₦10,000.00" data-description="black unisex jorts with an aesthetic design ">
+                                                            <img src="/images/devil jorts.jpeg" alt="jort">
+                                                            <div class="img_info">
+                                                            </div>
+
+                                                        </div>
+</div>  
+
+ 
+    
+        
+    <script src='/js/index.js'></script>
+</body>
+<footer>
+    <div class="footer">
+<div class="fdiv1"  >
+TRXXPZ
+<p style="font-size:0.7em; color:white">© 2022 trxxpz.</p>
+<p style="font-size:0.7em; color:white"> all rights reserved </p>
+<p style="font-size:0.8em; color:white"> <strong >Phone No:</strong> 09156585399 </p>
+</div>
+<div class="about_us">
+About Us
+<a href="/pages/about.html">About Us</a>
+<a href="/pages/about.html">FAQs</a>
+<a href="/pages/store_location.html">Store Location</a>
+
+
+</div>
+<div class="follow_us" >
+Follow Us
+<div><i class="bi bi-facebook"></i>trxxpz_</div> 
+<div><i class="bi bi-instagram"></i>trxxpz._</div> 
+<div><i class="bi bi-envelope"></i>trxxpz@gmail.com</div> 
+</div>
+
+</div>
+</footer>
+<script>
+    AOS.init();
+  </script>
+</html>
